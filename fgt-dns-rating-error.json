@@ -1,0 +1,76 @@
+{
+    "data": {
+        "alert": [
+            {
+                "address-filter": null,
+                "creation-time": 1640283582,
+                "description": "Catch when DNS Filtering is broken because of rating errors and tell FortiGate",
+                "device": [
+                    {
+                        "id": 1,
+                        "name": "All_Devices",
+                        "type": 2,
+                        "vdom": null
+                    }
+                ],
+                "device-specify": 0,
+                "email-from": "example@gmail.com",
+                "email-html-format": 0,
+                "email-subject": "FortiGuard SDNS Rating Error on FortiGate",
+                "email-svr": "smtp.gmail.com",
+                "email-to": "example@gmail.com",
+                "enable": 1,
+                "enable-time": 0,
+                "fabric-connector": null,
+                "filter": [
+                    {
+                        "aggregate-expr": "COUNT(*) >= 10",
+                        "dev-type": 0,
+                        "enable": 1,
+                        "eventstatus": "open",
+                        "eventtype": "",
+                        "extrainfo": "",
+                        "extrainfo-type": 0,
+                        "filter-expr": "",
+                        "groupby1": "msg",
+                        "groupby2": "",
+                        "groupby3": null,
+                        "id": 1,
+                        "indicator": null,
+                        "logtype": "dns",
+                        "rule": [
+                            {
+                                "id": 1,
+                                "key": "msg",
+                                "oper": 6,
+                                "value": "A rating error occurs",
+                                "value-type": 0
+                            }
+                        ],
+                        "rule-relation": 1,
+                        "severity": 2,
+                        "subject": "",
+                        "tag": "",
+                        "thres-count": 3,
+                        "thres-duration": 2,
+                        "utmevent": ""
+                    }
+                ],
+                "filter-relation": 1,
+                "handlertype": 1,
+                "id": 2,
+                "name": "FortiGuard SDNS Rating Error on FortiGate",
+                "pre-filter": null,
+                "pre-filter-option": 0,
+                "protected": 0,
+                "target-enable": 1,
+                "template-url": "",
+                "update-time": 1640286925,
+                "uuid": "",
+                "version": 2
+            }
+        ]
+    },
+    "data-type": "txt",
+    "length": 1264
+}
